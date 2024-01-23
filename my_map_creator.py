@@ -1,6 +1,12 @@
+import os
+
 import utm
 import folium
 import pandas as pd
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 
 
 def utm_to_latlon(utm_x, utm_y, zone_number=30, zone_letter='T'):
@@ -14,6 +20,33 @@ def utm_to_latlon(utm_x, utm_y, zone_number=30, zone_letter='T'):
     except Exception as e:
         print("Error en la conversión:", e, " utm_x: ", utm_x, "utm_y: ", utm_y, " ")
         return None, None
+
+
+def create_png(map_file: str, output_dir='Maps/', map_name='map'):
+    # Ensure the output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+
+    png_file = f"{output_dir}{map_name}.png"
+
+    # Initialize Chrome Driver here
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")  # Ensure GUI is off
+    chrome_options.add_argument("--start-maximized")
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+
+    webdriver_service = Service(ChromeDriverManager().install())
+    browser = webdriver.Chrome(options=chrome_options, service_log_path=webdriver_service)
+
+    # Open HTML file with selenium
+    browser.get(f'file:///{os.path.abspath(map_file)}')
+    browser.set_window_size(1920, 1080)  # May need to adjust if map is not fully captured
+
+    browser.implicitly_wait(5)
+    browser.save_screenshot(png_file)
+
+    browser.quit()
+
+    return png_file
 
 
 class MapCreator:
@@ -51,7 +84,9 @@ class MapCreator:
         )
         self.df = self.df.dropna(subset=self.columns_for_coordinates)  # Remove rows where conversion failed
 
-    def create_map(self, output_dir='Maps/', map_name='map'):
+    def create_map(self, output_dir='Maps/', map_name='map', get_png=False):
+        os.makedirs(output_dir, exist_ok=True)
+
         madrid_map = folium.Map(location=[40.4168, -3.7038], zoom_start=12)
 
         if self.df_labels is not None:
@@ -69,3 +104,6 @@ class MapCreator:
         # Save the map to an HTML file
         map_file = f"{output_dir}{map_name}.html"
         madrid_map.save(map_file)
+
+        if get_png:
+            return create_png(map_file, output_dir, map_name)
