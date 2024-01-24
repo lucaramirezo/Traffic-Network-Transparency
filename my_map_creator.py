@@ -63,7 +63,7 @@ class MapCreator:
         if columns_for_label is not None:
             self.df_labels = self.df[columns_for_label].fillna('MISSING')
         else:
-            self.df_labels = None
+            self.df_labels = [lat_col_name, long_col_name]
 
     def set_columns_for_label(self, columns_for_label: list):
         self.df_labels = self.df[columns_for_label].fillna('MISSING')
