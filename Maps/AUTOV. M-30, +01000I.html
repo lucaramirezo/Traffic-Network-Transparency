@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_609b8de6f7f2a77b4c2640ca8e2b719d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_609b8de6f7f2a77b4c2640ca8e2b719d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_609b8de6f7f2a77b4c2640ca8e2b719d = L.map(
+                "map_609b8de6f7f2a77b4c2640ca8e2b719d",
+                {
+                    center: [40.4168, -3.7038],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_629b6b4510d3504902a8a5603c2e2232 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+            var marker_6fdab6acf49ebcf9cf5a96e2559b03d1 = L.marker(
+                [40.397058339541545, -3.6705175090657756],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_139c5ce403e9d840d03cd1cf7060b711 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f73ef6a4338e65292fc2735057fb7f3 = $(`<div id="html_8f73ef6a4338e65292fc2735057fb7f3" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Lluvia débil tipo_accidente: Caída</div>`)[0];
+                popup_139c5ce403e9d840d03cd1cf7060b711.setContent(html_8f73ef6a4338e65292fc2735057fb7f3);
+            
+        
+
+        marker_6fdab6acf49ebcf9cf5a96e2559b03d1.bindPopup(popup_139c5ce403e9d840d03cd1cf7060b711)
+        ;
+
+        
+    
+    
+            var marker_6efcc2369f59e2c69e2b97b27ec0c485 = L.marker(
+                [40.39524489928199, -3.672368703369312],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_eeb266a1f293f0e5d2a7caf5c7a28ce6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_454556d2b5227cc3cd15ac2585eb06a6 = $(`<div id="html_454556d2b5227cc3cd15ac2585eb06a6" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Lluvia débil tipo_accidente: Colisión múltiple</div>`)[0];
+                popup_eeb266a1f293f0e5d2a7caf5c7a28ce6.setContent(html_454556d2b5227cc3cd15ac2585eb06a6);
+            
+        
+
+        marker_6efcc2369f59e2c69e2b97b27ec0c485.bindPopup(popup_eeb266a1f293f0e5d2a7caf5c7a28ce6)
+        ;
+
+        
+    
+    
+            var marker_b0ff2323165223d2092f884b06799f77 = L.marker(
+                [40.39524489928199, -3.672368703369312],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_f73622f261ad2a249b572fe799f59a4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_852751b03a0be94bfb86c270d926326b = $(`<div id="html_852751b03a0be94bfb86c270d926326b" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Lluvia débil tipo_accidente: Colisión múltiple</div>`)[0];
+                popup_f73622f261ad2a249b572fe799f59a4b.setContent(html_852751b03a0be94bfb86c270d926326b);
+            
+        
+
+        marker_b0ff2323165223d2092f884b06799f77.bindPopup(popup_f73622f261ad2a249b572fe799f59a4b)
+        ;
+
+        
+    
+    
+            var marker_f5e71d5a36b84af48dbac4a6b375f3ad = L.marker(
+                [40.39524489928199, -3.672368703369312],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_cc2c8f1e5b668447009050e58722699c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf5d44ffc54ea7f986fba5bf50444b4e = $(`<div id="html_cf5d44ffc54ea7f986fba5bf50444b4e" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Lluvia débil tipo_accidente: Colisión múltiple</div>`)[0];
+                popup_cc2c8f1e5b668447009050e58722699c.setContent(html_cf5d44ffc54ea7f986fba5bf50444b4e);
+            
+        
+
+        marker_f5e71d5a36b84af48dbac4a6b375f3ad.bindPopup(popup_cc2c8f1e5b668447009050e58722699c)
+        ;
+
+        
+    
+    
+            var marker_61b54821c2192feb880c0ddf675e2b34 = L.marker(
+                [40.39524489928199, -3.672368703369312],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_4f6120eb0682f96497b97d09c9383d1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aef71032b9f07439c6684f91b9edfd44 = $(`<div id="html_aef71032b9f07439c6684f91b9edfd44" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Lluvia débil tipo_accidente: Colisión múltiple</div>`)[0];
+                popup_4f6120eb0682f96497b97d09c9383d1b.setContent(html_aef71032b9f07439c6684f91b9edfd44);
+            
+        
+
+        marker_61b54821c2192feb880c0ddf675e2b34.bindPopup(popup_4f6120eb0682f96497b97d09c9383d1b)
+        ;
+
+        
+    
+    
+            var marker_ffa8a15761e66b5c245818ba24b4469d = L.marker(
+                [40.39524489928199, -3.672368703369312],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_9af51eb59758310677671c0ab24383c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29b214bc48d8accda618c028372d3204 = $(`<div id="html_29b214bc48d8accda618c028372d3204" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Lluvia débil tipo_accidente: Colisión múltiple</div>`)[0];
+                popup_9af51eb59758310677671c0ab24383c1.setContent(html_29b214bc48d8accda618c028372d3204);
+            
+        
+
+        marker_ffa8a15761e66b5c245818ba24b4469d.bindPopup(popup_9af51eb59758310677671c0ab24383c1)
+        ;
+
+        
+    
+    
+            var marker_e3a87b55f1e986a4b0ea3ed904252367 = L.marker(
+                [40.396044032545625, -3.6714554533872334],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_937e6d522d1598674a6605a0fc1aebec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_218e3bc780b1216dee74f0e48898b080 = $(`<div id="html_218e3bc780b1216dee74f0e48898b080" style="width: 100.0%; height: 100.0%;">estado_meteorológico: LLuvia intensa tipo_accidente: Alcance</div>`)[0];
+                popup_937e6d522d1598674a6605a0fc1aebec.setContent(html_218e3bc780b1216dee74f0e48898b080);
+            
+        
+
+        marker_e3a87b55f1e986a4b0ea3ed904252367.bindPopup(popup_937e6d522d1598674a6605a0fc1aebec)
+        ;
+
+        
+    
+    
+            var marker_bdec80b4cb5e7e66f73c5672119ce9c7 = L.marker(
+                [40.396044032545625, -3.6714554533872334],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_9db6dcb04fa23ce699e6afa170efa782 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dba2fa37a981821be29339b63bea62ca = $(`<div id="html_dba2fa37a981821be29339b63bea62ca" style="width: 100.0%; height: 100.0%;">estado_meteorológico: LLuvia intensa tipo_accidente: Alcance</div>`)[0];
+                popup_9db6dcb04fa23ce699e6afa170efa782.setContent(html_dba2fa37a981821be29339b63bea62ca);
+            
+        
+
+        marker_bdec80b4cb5e7e66f73c5672119ce9c7.bindPopup(popup_9db6dcb04fa23ce699e6afa170efa782)
+        ;
+
+        
+    
+    
+            var marker_7cbbf3111c9cad8baa443a11be04c622 = L.marker(
+                [40.396044032545625, -3.6714554533872334],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_55f4aacc4de994882711402edd11413d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc24ac2c93ba6490c4ae9249f2f749af = $(`<div id="html_dc24ac2c93ba6490c4ae9249f2f749af" style="width: 100.0%; height: 100.0%;">estado_meteorológico: LLuvia intensa tipo_accidente: Alcance</div>`)[0];
+                popup_55f4aacc4de994882711402edd11413d.setContent(html_dc24ac2c93ba6490c4ae9249f2f749af);
+            
+        
+
+        marker_7cbbf3111c9cad8baa443a11be04c622.bindPopup(popup_55f4aacc4de994882711402edd11413d)
+        ;
+
+        
+    
+    
+            var marker_ce9151f3d7750fcaccae2f994ecc375e = L.marker(
+                [40.396044032545625, -3.6714554533872334],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_5109ea55cf547988634eff41380b6183 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8b667bbe065b7ec4f6eb38e016b4ccd = $(`<div id="html_f8b667bbe065b7ec4f6eb38e016b4ccd" style="width: 100.0%; height: 100.0%;">estado_meteorológico: LLuvia intensa tipo_accidente: Alcance</div>`)[0];
+                popup_5109ea55cf547988634eff41380b6183.setContent(html_f8b667bbe065b7ec4f6eb38e016b4ccd);
+            
+        
+
+        marker_ce9151f3d7750fcaccae2f994ecc375e.bindPopup(popup_5109ea55cf547988634eff41380b6183)
+        ;
+
+        
+    
+    
+            var marker_18c566c45e3a257493904cba04aca543 = L.marker(
+                [40.396044032545625, -3.6714554533872334],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_8b6980289524ec06430bed3f226a3755 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cb362311b4dafb119acaf7444d81432 = $(`<div id="html_8cb362311b4dafb119acaf7444d81432" style="width: 100.0%; height: 100.0%;">estado_meteorológico: LLuvia intensa tipo_accidente: Alcance</div>`)[0];
+                popup_8b6980289524ec06430bed3f226a3755.setContent(html_8cb362311b4dafb119acaf7444d81432);
+            
+        
+
+        marker_18c566c45e3a257493904cba04aca543.bindPopup(popup_8b6980289524ec06430bed3f226a3755)
+        ;
+
+        
+    
+    
+            var marker_712309393be117c89857d032cfed0e2b = L.marker(
+                [40.39697654185289, -3.6706098934579274],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_8686c9e3f31083a227936bf73d5179a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb90e043f47b234f95930449dde24c3c = $(`<div id="html_fb90e043f47b234f95930449dde24c3c" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Nublado tipo_accidente: Alcance</div>`)[0];
+                popup_8686c9e3f31083a227936bf73d5179a2.setContent(html_fb90e043f47b234f95930449dde24c3c);
+            
+        
+
+        marker_712309393be117c89857d032cfed0e2b.bindPopup(popup_8686c9e3f31083a227936bf73d5179a2)
+        ;
+
+        
+    
+    
+            var marker_cba75df3f1c907fd648797fca02ab316 = L.marker(
+                [40.39697654185289, -3.6706098934579274],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_ec5208677f1c7e919df56e5b223ca91f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9346078eea455582c79bedeb2a1e7187 = $(`<div id="html_9346078eea455582c79bedeb2a1e7187" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Nublado tipo_accidente: Alcance</div>`)[0];
+                popup_ec5208677f1c7e919df56e5b223ca91f.setContent(html_9346078eea455582c79bedeb2a1e7187);
+            
+        
+
+        marker_cba75df3f1c907fd648797fca02ab316.bindPopup(popup_ec5208677f1c7e919df56e5b223ca91f)
+        ;
+
+        
+    
+    
+            var marker_2a37ace492a4762b88a422e7e7c2f1ae = L.marker(
+                [40.3982615216279, -3.669179888637626],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_d3a154e31151f2689f780f1fa95cc683 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be045edd8a9056a64e31cd8dc7395394 = $(`<div id="html_be045edd8a9056a64e31cd8dc7395394" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_d3a154e31151f2689f780f1fa95cc683.setContent(html_be045edd8a9056a64e31cd8dc7395394);
+            
+        
+
+        marker_2a37ace492a4762b88a422e7e7c2f1ae.bindPopup(popup_d3a154e31151f2689f780f1fa95cc683)
+        ;
+
+        
+    
+    
+            var marker_dcd8d211642d97d199626fe74f103c5c = L.marker(
+                [40.3982615216279, -3.669179888637626],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_b3e90d0ebd2e4f7cc555f3d7e739669c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e149e1987c9a4d346800ad37523cf66a = $(`<div id="html_e149e1987c9a4d346800ad37523cf66a" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_b3e90d0ebd2e4f7cc555f3d7e739669c.setContent(html_e149e1987c9a4d346800ad37523cf66a);
+            
+        
+
+        marker_dcd8d211642d97d199626fe74f103c5c.bindPopup(popup_b3e90d0ebd2e4f7cc555f3d7e739669c)
+        ;
+
+        
+    
+    
+            var marker_8710dd605859fcf59f039d1baed19f88 = L.marker(
+                [40.3982615216279, -3.669179888637626],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_425be331e327cf2390fdd6912b9fc13e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b33aa2a7c7b9412335b560601471e2b = $(`<div id="html_3b33aa2a7c7b9412335b560601471e2b" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_425be331e327cf2390fdd6912b9fc13e.setContent(html_3b33aa2a7c7b9412335b560601471e2b);
+            
+        
+
+        marker_8710dd605859fcf59f039d1baed19f88.bindPopup(popup_425be331e327cf2390fdd6912b9fc13e)
+        ;
+
+        
+    
+    
+            var marker_aab153e84f9a62ed80416275f51e6713 = L.marker(
+                [40.3982941666721, -3.66945447864921],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_d0ca7ee052dff99b1c8084739fc86fe1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3eee3fe38ab96b6639ca63554f85b674 = $(`<div id="html_3eee3fe38ab96b6639ca63554f85b674" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Colisión múltiple</div>`)[0];
+                popup_d0ca7ee052dff99b1c8084739fc86fe1.setContent(html_3eee3fe38ab96b6639ca63554f85b674);
+            
+        
+
+        marker_aab153e84f9a62ed80416275f51e6713.bindPopup(popup_d0ca7ee052dff99b1c8084739fc86fe1)
+        ;
+
+        
+    
+    
+            var marker_11d2d134bc837cb6b780314b08439678 = L.marker(
+                [40.3982941666721, -3.66945447864921],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_9de7425cf64ea18216f702983eff691e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f65a7ab1e0fd7bcaf0c036ed8e82333 = $(`<div id="html_0f65a7ab1e0fd7bcaf0c036ed8e82333" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Colisión múltiple</div>`)[0];
+                popup_9de7425cf64ea18216f702983eff691e.setContent(html_0f65a7ab1e0fd7bcaf0c036ed8e82333);
+            
+        
+
+        marker_11d2d134bc837cb6b780314b08439678.bindPopup(popup_9de7425cf64ea18216f702983eff691e)
+        ;
+
+        
+    
+    
+            var marker_b867ea2b18fa507cc621577fb3506774 = L.marker(
+                [40.3982941666721, -3.66945447864921],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_edfffa17b90f55af56a03fcfba6f82ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96e1bde5c4d902fdf936b86538740370 = $(`<div id="html_96e1bde5c4d902fdf936b86538740370" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Colisión múltiple</div>`)[0];
+                popup_edfffa17b90f55af56a03fcfba6f82ac.setContent(html_96e1bde5c4d902fdf936b86538740370);
+            
+        
+
+        marker_b867ea2b18fa507cc621577fb3506774.bindPopup(popup_edfffa17b90f55af56a03fcfba6f82ac)
+        ;
+
+        
+    
+    
+            var marker_77aa698ea99e5a18c2f41ae1acd99a98 = L.marker(
+                [40.39742707548995, -3.670249684796163],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_8a371a0da693bc64c5712e12fce6aa40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c09893e808ea818ac24d08febede8f96 = $(`<div id="html_c09893e808ea818ac24d08febede8f96" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Colisión frontal</div>`)[0];
+                popup_8a371a0da693bc64c5712e12fce6aa40.setContent(html_c09893e808ea818ac24d08febede8f96);
+            
+        
+
+        marker_77aa698ea99e5a18c2f41ae1acd99a98.bindPopup(popup_8a371a0da693bc64c5712e12fce6aa40)
+        ;
+
+        
+    
+    
+            var marker_3c224a69bd2fbae9744172d5ececb4e3 = L.marker(
+                [40.39742707548995, -3.670249684796163],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_0b2440e880d172696e7c189f26c6a180 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed248cc9230f8617da990f0eaeedfc18 = $(`<div id="html_ed248cc9230f8617da990f0eaeedfc18" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Colisión frontal</div>`)[0];
+                popup_0b2440e880d172696e7c189f26c6a180.setContent(html_ed248cc9230f8617da990f0eaeedfc18);
+            
+        
+
+        marker_3c224a69bd2fbae9744172d5ececb4e3.bindPopup(popup_0b2440e880d172696e7c189f26c6a180)
+        ;
+
+        
+    
+    
+            var marker_cc1746afaae55bd3ec2ae92a58684703 = L.marker(
+                [40.39546385065186, -3.672107749451795],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_3c8d5635304a526f2b278516afbe7480 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b521bbdd78217d97792ba7615c9e748 = $(`<div id="html_4b521bbdd78217d97792ba7615c9e748" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_3c8d5635304a526f2b278516afbe7480.setContent(html_4b521bbdd78217d97792ba7615c9e748);
+            
+        
+
+        marker_cc1746afaae55bd3ec2ae92a58684703.bindPopup(popup_3c8d5635304a526f2b278516afbe7480)
+        ;
+
+        
+    
+    
+            var marker_0dbcd11083e5ad909d7e072cf70a0207 = L.marker(
+                [40.39546385065186, -3.672107749451795],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_1653349c92705b768b3f1dc136982392 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83bf39c026c7ba6950f5050262994032 = $(`<div id="html_83bf39c026c7ba6950f5050262994032" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_1653349c92705b768b3f1dc136982392.setContent(html_83bf39c026c7ba6950f5050262994032);
+            
+        
+
+        marker_0dbcd11083e5ad909d7e072cf70a0207.bindPopup(popup_1653349c92705b768b3f1dc136982392)
+        ;
+
+        
+    
+    
+            var marker_995be1ecde4634094f457a9c2610c42c = L.marker(
+                [40.39546385065186, -3.672107749451795],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_1f84192c5c75ea9e4af475ca048ba5bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b400d295c9be363991f514e613fde3e5 = $(`<div id="html_b400d295c9be363991f514e613fde3e5" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_1f84192c5c75ea9e4af475ca048ba5bf.setContent(html_b400d295c9be363991f514e613fde3e5);
+            
+        
+
+        marker_995be1ecde4634094f457a9c2610c42c.bindPopup(popup_1f84192c5c75ea9e4af475ca048ba5bf)
+        ;
+
+        
+    
+    
+            var marker_5a0fab296d63b270ae696e6a1c5bfd47 = L.marker(
+                [40.39546385065186, -3.672107749451795],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_a35725c3c33f3d0590561ca649b0972f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d8121dbc7ea3af5de16b53ad12bfe16 = $(`<div id="html_1d8121dbc7ea3af5de16b53ad12bfe16" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_a35725c3c33f3d0590561ca649b0972f.setContent(html_1d8121dbc7ea3af5de16b53ad12bfe16);
+            
+        
+
+        marker_5a0fab296d63b270ae696e6a1c5bfd47.bindPopup(popup_a35725c3c33f3d0590561ca649b0972f)
+        ;
+
+        
+    
+    
+            var marker_3056e127565ca9ad72125dcb458f8598 = L.marker(
+                [40.39405361067087, -3.6742962781716333],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_bc79e48636e3daaaaeda9a075182e54a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a557b46d32556cdf89f09e5a58ac6195 = $(`<div id="html_a557b46d32556cdf89f09e5a58ac6195" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_bc79e48636e3daaaaeda9a075182e54a.setContent(html_a557b46d32556cdf89f09e5a58ac6195);
+            
+        
+
+        marker_3056e127565ca9ad72125dcb458f8598.bindPopup(popup_bc79e48636e3daaaaeda9a075182e54a)
+        ;
+
+        
+    
+    
+            var marker_e801c508cdb17f709881895b28f96907 = L.marker(
+                [40.39405361067087, -3.6742962781716333],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_f58c906d98fe1157025674778c93f051 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ffd7a0a59ac3210c9890db776246ccb = $(`<div id="html_9ffd7a0a59ac3210c9890db776246ccb" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_f58c906d98fe1157025674778c93f051.setContent(html_9ffd7a0a59ac3210c9890db776246ccb);
+            
+        
+
+        marker_e801c508cdb17f709881895b28f96907.bindPopup(popup_f58c906d98fe1157025674778c93f051)
+        ;
+
+        
+    
+    
+            var marker_23312211a1664acc36317c745d4724b0 = L.marker(
+                [40.39405361067087, -3.6742962781716333],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_8cf48735e2024d7c93455d7c0b112f70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_481a0e537d743f9bc17483938fcb16c2 = $(`<div id="html_481a0e537d743f9bc17483938fcb16c2" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_8cf48735e2024d7c93455d7c0b112f70.setContent(html_481a0e537d743f9bc17483938fcb16c2);
+            
+        
+
+        marker_23312211a1664acc36317c745d4724b0.bindPopup(popup_8cf48735e2024d7c93455d7c0b112f70)
+        ;
+
+        
+    
+    
+            var marker_8cba3b22d51649742baad190188ccb0f = L.marker(
+                [40.39405361067087, -3.6742962781716333],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_24250845b404bb469da5ec8dacd18d11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acbedcde32ad7ba468f66ebe2e2b898c = $(`<div id="html_acbedcde32ad7ba468f66ebe2e2b898c" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_24250845b404bb469da5ec8dacd18d11.setContent(html_acbedcde32ad7ba468f66ebe2e2b898c);
+            
+        
+
+        marker_8cba3b22d51649742baad190188ccb0f.bindPopup(popup_24250845b404bb469da5ec8dacd18d11)
+        ;
+
+        
+    
+    
+            var marker_f964d111319661e9db89ace9526f0d15 = L.marker(
+                [40.39406721181391, -3.6743245281125043],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_a2762cdf2d8dbba901aec4a311107de1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44a913c8bb6c9cc773650b7c0271088a = $(`<div id="html_44a913c8bb6c9cc773650b7c0271088a" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_a2762cdf2d8dbba901aec4a311107de1.setContent(html_44a913c8bb6c9cc773650b7c0271088a);
+            
+        
+
+        marker_f964d111319661e9db89ace9526f0d15.bindPopup(popup_a2762cdf2d8dbba901aec4a311107de1)
+        ;
+
+        
+    
+    
+            var marker_f0734ba90876777c03d3afcf32ab2cf2 = L.marker(
+                [40.39406721181391, -3.6743245281125043],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_fdf16e35979765a9f316f716d6037b57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5ec8d8563437582bc3e91993f90ac2d = $(`<div id="html_b5ec8d8563437582bc3e91993f90ac2d" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_fdf16e35979765a9f316f716d6037b57.setContent(html_b5ec8d8563437582bc3e91993f90ac2d);
+            
+        
+
+        marker_f0734ba90876777c03d3afcf32ab2cf2.bindPopup(popup_fdf16e35979765a9f316f716d6037b57)
+        ;
+
+        
+    
+    
+            var marker_791d5405b8d33521e6da7ea7b9a5421b = L.marker(
+                [40.39406721181391, -3.6743245281125043],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_bc58a7c7c8c60d6d41ace62ea072ec5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e09d9c87a2ab859a937adb335e17f8a8 = $(`<div id="html_e09d9c87a2ab859a937adb335e17f8a8" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_bc58a7c7c8c60d6d41ace62ea072ec5f.setContent(html_e09d9c87a2ab859a937adb335e17f8a8);
+            
+        
+
+        marker_791d5405b8d33521e6da7ea7b9a5421b.bindPopup(popup_bc58a7c7c8c60d6d41ace62ea072ec5f)
+        ;
+
+        
+    
+    
+            var marker_49a2d6a2c791443837a0cba59b5ca3a6 = L.marker(
+                [40.39406721181391, -3.6743245281125043],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_3aaba99d3b6c0a3f5541c1c7d43fccb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b7a1bd89f9ae2575f22c5af04a711e9 = $(`<div id="html_4b7a1bd89f9ae2575f22c5af04a711e9" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_3aaba99d3b6c0a3f5541c1c7d43fccb3.setContent(html_4b7a1bd89f9ae2575f22c5af04a711e9);
+            
+        
+
+        marker_49a2d6a2c791443837a0cba59b5ca3a6.bindPopup(popup_3aaba99d3b6c0a3f5541c1c7d43fccb3)
+        ;
+
+        
+    
+    
+            var marker_d237ffd3400ec20a80c96e95519c50e7 = L.marker(
+                [40.39406721181391, -3.6743245281125043],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_7973bd77038708fca4043784a3bd7c89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cb19b5e48cf6ee79bd9170c709f1d99 = $(`<div id="html_5cb19b5e48cf6ee79bd9170c709f1d99" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_7973bd77038708fca4043784a3bd7c89.setContent(html_5cb19b5e48cf6ee79bd9170c709f1d99);
+            
+        
+
+        marker_d237ffd3400ec20a80c96e95519c50e7.bindPopup(popup_7973bd77038708fca4043784a3bd7c89)
+        ;
+
+        
+    
+    
+            var marker_02211481bdd2d510b5203fbc1ebafa67 = L.marker(
+                [40.39406721181391, -3.6743245281125043],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_7a9975bcc0c97b09cb26772bd87c61e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f89deb2f82279969e5aea4611898ff49 = $(`<div id="html_f89deb2f82279969e5aea4611898ff49" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_7a9975bcc0c97b09cb26772bd87c61e4.setContent(html_f89deb2f82279969e5aea4611898ff49);
+            
+        
+
+        marker_02211481bdd2d510b5203fbc1ebafa67.bindPopup(popup_7a9975bcc0c97b09cb26772bd87c61e4)
+        ;
+
+        
+    
+    
+            var marker_096e2521293d1ba68828b777351f7eec = L.marker(
+                [40.396328194307614, -3.6714962659668497],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_cf5264dc6941afd7117bb4aa68951c3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e96c3a0d82270f4e1e5302db7cf9596 = $(`<div id="html_2e96c3a0d82270f4e1e5302db7cf9596" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_cf5264dc6941afd7117bb4aa68951c3c.setContent(html_2e96c3a0d82270f4e1e5302db7cf9596);
+            
+        
+
+        marker_096e2521293d1ba68828b777351f7eec.bindPopup(popup_cf5264dc6941afd7117bb4aa68951c3c)
+        ;
+
+        
+    
+    
+            var marker_3d27a00e203cb65b40290fb8eb135dc0 = L.marker(
+                [40.396328194307614, -3.6714962659668497],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_884c3880f085a05761898efaa604584b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_032e39163067e1bddad3c003650e6989 = $(`<div id="html_032e39163067e1bddad3c003650e6989" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Despejado tipo_accidente: Alcance</div>`)[0];
+                popup_884c3880f085a05761898efaa604584b.setContent(html_032e39163067e1bddad3c003650e6989);
+            
+        
+
+        marker_3d27a00e203cb65b40290fb8eb135dc0.bindPopup(popup_884c3880f085a05761898efaa604584b)
+        ;
+
+        
+    
+    
+            var marker_05266bdcf96478966f7ada7c5d6074bb = L.marker(
+                [40.39813956701005, -3.669649617663019],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_0a978bd57a7b2173d97539605147dcb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13fe850bda882734fb53d0c9dc8ec264 = $(`<div id="html_13fe850bda882734fb53d0c9dc8ec264" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Lluvia débil tipo_accidente: Otro</div>`)[0];
+                popup_0a978bd57a7b2173d97539605147dcb3.setContent(html_13fe850bda882734fb53d0c9dc8ec264);
+            
+        
+
+        marker_05266bdcf96478966f7ada7c5d6074bb.bindPopup(popup_0a978bd57a7b2173d97539605147dcb3)
+        ;
+
+        
+    
+    
+            var marker_503eef52442ef68127c4804352bcfd9f = L.marker(
+                [40.39506980178655, -3.6726485444642587],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_a1926aa7269e428999580d56998bc787 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9bf241acfc926ad74adfd797528d0b0 = $(`<div id="html_f9bf241acfc926ad74adfd797528d0b0" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Lluvia débil tipo_accidente: Alcance</div>`)[0];
+                popup_a1926aa7269e428999580d56998bc787.setContent(html_f9bf241acfc926ad74adfd797528d0b0);
+            
+        
+
+        marker_503eef52442ef68127c4804352bcfd9f.bindPopup(popup_a1926aa7269e428999580d56998bc787)
+        ;
+
+        
+    
+    
+            var marker_b8b46401f47d1568b12c81468ccb1fd6 = L.marker(
+                [40.39506980178655, -3.6726485444642587],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_c71d9dec6d8f5ce20dca682a4f1f56b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04abf4db7c682dd019dd535bba61d1d6 = $(`<div id="html_04abf4db7c682dd019dd535bba61d1d6" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Lluvia débil tipo_accidente: Alcance</div>`)[0];
+                popup_c71d9dec6d8f5ce20dca682a4f1f56b8.setContent(html_04abf4db7c682dd019dd535bba61d1d6);
+            
+        
+
+        marker_b8b46401f47d1568b12c81468ccb1fd6.bindPopup(popup_c71d9dec6d8f5ce20dca682a4f1f56b8)
+        ;
+
+        
+    
+    
+            var marker_17ecbc983c72e7b7640d9fb11eb4fb6f = L.marker(
+                [40.39506980178655, -3.6726485444642587],
+                {}
+            ).addTo(map_609b8de6f7f2a77b4c2640ca8e2b719d);
+        
+    
+        var popup_a0f01a50839d1b07c64d44640ce1aaf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c03ccb5f79d7e085a39b4e7370020bf = $(`<div id="html_8c03ccb5f79d7e085a39b4e7370020bf" style="width: 100.0%; height: 100.0%;">estado_meteorológico: Lluvia débil tipo_accidente: Alcance</div>`)[0];
+                popup_a0f01a50839d1b07c64d44640ce1aaf6.setContent(html_8c03ccb5f79d7e085a39b4e7370020bf);
+            
+        
+
+        marker_17ecbc983c72e7b7640d9fb11eb4fb6f.bindPopup(popup_a0f01a50839d1b07c64d44640ce1aaf6)
+        ;
+
+        
+    
+</script>
+</html>
