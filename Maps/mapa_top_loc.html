@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_87050dce96c510b251c8044e6b7a01a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_87050dce96c510b251c8044e6b7a01a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_87050dce96c510b251c8044e6b7a01a0 = L.map(
+                "map_87050dce96c510b251c8044e6b7a01a0",
+                {
+                    center: [40.4168, -3.7038],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b642c0e09b22e2690e592b3379e906b5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_87050dce96c510b251c8044e6b7a01a0);
+        
+    
+            var marker_56eac17c08ea97ccd6b014191b1c9762 = L.marker(
+                [40.446927843648005, -3.6543369510910084],
+                {}
+            ).addTo(map_87050dce96c510b251c8044e6b7a01a0);
+        
+    
+        var popup_09bbe1af325bdc2272c44966e57eaeef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5887992d25f345cc5fc45b116993f25 = $(`<div id="html_b5887992d25f345cc5fc45b116993f25" style="width: 100.0%; height: 100.0%;">localizacion: AUTOV. A-2, +00500E num_accidents: 172 tipo_accidente: Alcance estado_meteorológico: Despejado</div>`)[0];
+                popup_09bbe1af325bdc2272c44966e57eaeef.setContent(html_b5887992d25f345cc5fc45b116993f25);
+            
+        
+
+        marker_56eac17c08ea97ccd6b014191b1c9762.bindPopup(popup_09bbe1af325bdc2272c44966e57eaeef)
+        ;
+
+        
+    
+    
+            var marker_01688d9c222422ef09f5d00111e328e9 = L.marker(
+                [40.378215475905556, -3.7191621102263634],
+                {}
+            ).addTo(map_87050dce96c510b251c8044e6b7a01a0);
+        
+    
+        var popup_39fe2904a623e35c757eda7cb3cde02b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eba4a201d97e1bc03ed3e6e6c3b30496 = $(`<div id="html_eba4a201d97e1bc03ed3e6e6c3b30496" style="width: 100.0%; height: 100.0%;">localizacion: AUTOV. A-42, +00500E num_accidents: 123 tipo_accidente: Colisión múltiple estado_meteorológico: Despejado</div>`)[0];
+                popup_39fe2904a623e35c757eda7cb3cde02b.setContent(html_eba4a201d97e1bc03ed3e6e6c3b30496);
+            
+        
+
+        marker_01688d9c222422ef09f5d00111e328e9.bindPopup(popup_39fe2904a623e35c757eda7cb3cde02b)
+        ;
+
+        
+    
+    
+            var marker_4fa5db7a8a69e0968aaada9fdd612e87 = L.marker(
+                [40.43868742698191, -3.67896631502596],
+                {}
+            ).addTo(map_87050dce96c510b251c8044e6b7a01a0);
+        
+    
+        var popup_8dcb74fadb3427c2f9cfc547a34ab48c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c5204ec6df487b76bdaaecb110a995e = $(`<div id="html_8c5204ec6df487b76bdaaecb110a995e" style="width: 100.0%; height: 100.0%;">localizacion: CALL. PRINCIPE DE VERGARA / CALL. FRANCISCO SILVELA num_accidents: 94 tipo_accidente: Colisión fronto-lateral estado_meteorológico: Despejado</div>`)[0];
+                popup_8dcb74fadb3427c2f9cfc547a34ab48c.setContent(html_8c5204ec6df487b76bdaaecb110a995e);
+            
+        
+
+        marker_4fa5db7a8a69e0968aaada9fdd612e87.bindPopup(popup_8dcb74fadb3427c2f9cfc547a34ab48c)
+        ;
+
+        
+    
+    
+            var marker_b3af2fcb6c20061d6665834b21a005e6 = L.marker(
+                [40.41595173734243, -3.6491925479026417],
+                {}
+            ).addTo(map_87050dce96c510b251c8044e6b7a01a0);
+        
+    
+        var popup_699eeac564f4417a8a736ae6e46ee745 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5d94a4cf62208b05fee2e6f6bea7198 = $(`<div id="html_e5d94a4cf62208b05fee2e6f6bea7198" style="width: 100.0%; height: 100.0%;">localizacion: AUTOV. M-23, 0 num_accidents: 78 tipo_accidente: Alcance estado_meteorológico: Despejado</div>`)[0];
+                popup_699eeac564f4417a8a736ae6e46ee745.setContent(html_e5d94a4cf62208b05fee2e6f6bea7198);
+            
+        
+
+        marker_b3af2fcb6c20061d6665834b21a005e6.bindPopup(popup_699eeac564f4417a8a736ae6e46ee745)
+        ;
+
+        
+    
+    
+            var marker_5142dcda9aa5b29f2cc6f96349fbd0d6 = L.marker(
+                [40.430369871256644, -3.597435287055889],
+                {}
+            ).addTo(map_87050dce96c510b251c8044e6b7a01a0);
+        
+    
+        var popup_58664a34fc8b3399bfd6ce04873a2350 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b052a769b778cd44b5030f8afdaec26 = $(`<div id="html_3b052a769b778cd44b5030f8afdaec26" style="width: 100.0%; height: 100.0%;">localizacion: AVDA. ARCENTALES / AUTOV. M-40 num_accidents: 76 tipo_accidente: Alcance estado_meteorológico: Despejado</div>`)[0];
+                popup_58664a34fc8b3399bfd6ce04873a2350.setContent(html_3b052a769b778cd44b5030f8afdaec26);
+            
+        
+
+        marker_5142dcda9aa5b29f2cc6f96349fbd0d6.bindPopup(popup_58664a34fc8b3399bfd6ce04873a2350)
+        ;
+
+        
+    
+</script>
+</html>
