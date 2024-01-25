@@ -94,12 +94,17 @@ class MapCreator:
             labels = self.df_labels.to_dict(orient='records') if self.df_labels is not None else [{}] * len(coords)
 
             for (lat, lon), label in zip(coords.values, labels):
-                popup_text = '\n'.join([f"{k}: {v}" for k, v in label.items()]) if label else ''
+                for (lat, lon), label in zip(coords.values, labels):
+                    popup_text = '\n'.join([f"{k}: {v}" for k, v in label.items()]) if label else ''
+                google_maps_url = f"https://www.google.com/maps/@{lat},{lon},15z"
+                popup_text += f'<br><a href="{google_maps_url}" target="_blank">Abrir en Google Maps</a>'
                 folium.Marker([lat, lon], popup=popup_text).add_to(madrid_map)
         else:
             coords = self.df[list(self.columns_for_coordinates)]
             for (lat, lon) in coords.values:
-                folium.Marker([lat, lon]).add_to(madrid_map)
+                google_maps_url = f"https://www.google.com/maps/@{lat},{lon},15z"
+                popup_text = f'<a href="{google_maps_url}" target="_blank">Abrir en Google Maps</a>'
+                folium.Marker([lat, lon], popup=popup_text).add_to(madrid_map)
 
         # Save the map to an HTML file
         map_file = f"{output_dir}{map_name}.html"
